@@ -1,0 +1,83 @@
+---
+const handleClick = () =>{
+    alert("hola")
+}
+---
+
+<header class="flex items-center justify-around h-[70px] mx-4 my-2">
+    <a
+    class="flex items-center flex-col gap-x-3"
+    href="/">
+        <img
+        id="logo"
+        class="w-[150px]" 
+        src="/public/logo3.png" 
+        alt="iWeb Logo">
+        <span class="text-[10px] font-bold">Desarrollando futuro</span>
+    </a>
+    <nav class=" items-center justify-between hidden w-full md:flex md:w-auto md:order-">
+        <ul class="cursor-pointer text-xxl flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
+            <li>
+                <a class="px-2.5 py-3 hover:bg-cyan-200 hover:text-zinc-600
+                rounded-full">Inicio</a>
+            </li>
+            <li>
+                <a class="px-2.5 py-3 hover:bg-cyan-200 hover:text-zinc-600
+                rounded-full">Sobre nosotros</a>
+            </li>
+            <li>
+                <a class="px-2.5 py-3 hover:bg-cyan-200 hover:text-zinc-600
+                rounded-full">Proyectos</a>
+            </li>
+            <li>
+                <a class="px-2.5 py-3 hover:bg-cyan-200 hover:text-zinc-600
+                rounded-full">Planes</a>
+            </li>
+            <li>
+                <a class="px-2.5 py-3 hover:bg-cyan-200 hover:text-zinc-600
+                rounded-full">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="relative">
+        <button
+        id="button-idioms" 
+        class="p-1 hover:bg-cyan-200 rounded-full">
+        <img 
+        class="size-12" 
+        src="/public/idioms/spanish.png" 
+        alt="Spanish Logo">
+    </button>
+    <div 
+    class="absolute z-10 right-2 h-[85px] hidden"
+    id="div-idioms">
+        <div 
+        class="cursor-pointer hover:bg-cyan-200 rounded-full">
+            <img
+            class="size-10" 
+            src="/public/idioms/spanish.png" 
+            alt="Spanish Logo">
+        </div>
+        <div 
+        class="cursor-pointer hover:bg-cyan-200 rounded-full">
+            <img
+            class="size-10" 
+            src="/public/idioms/english.png" 
+            alt="English Logo">
+        </div>
+    </div>
+</div>
+    </header>
+    <script>
+        const button = document.getElementById("button-idioms")
+        const divButton = document.getElementById("div-idioms")
+
+        button?.addEventListener("mouseenter",() =>{
+            divButton?.classList.toggle("hidden")
+        })
+        
+        divButton?.addEventListener("mouseout", () =>{
+            divButton?.classList.toggle("hidden")
+
+        })
+    </script>

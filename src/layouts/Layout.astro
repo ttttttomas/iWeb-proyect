@@ -1,11 +1,14 @@
 ---
+import Header from '../components/Header.astro'
+import '@fontsource-variable/montserrat';
+
+
 interface Props {
 	title: string;
 	description: string;
 }
 
-const { title } = Astro.props;
-const { description } = Astro.props;
+const { title,description } = Astro.props;
 ---
 
 <!doctype html>
@@ -19,7 +22,8 @@ const { description } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<Header />
+			<slot />
 	</body>
 </html>
 <style is:global>
@@ -30,5 +34,11 @@ const { description } = Astro.props;
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
+		--bgColor2: rgb(31, 32, 35)
+	}
+	body{
+		font-family: 'Montserrat Variable', sans-serif;
+		background-color: var(--bgColor2);
+		color: #fff
 	}
 </style>
