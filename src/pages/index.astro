@@ -1,17 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
 import InstagramIcon from '../components/Icons/Instagram.astro'
+import ArrowIcon from '../components/Icons/Arrow.astro'
+import MantIcon from '../components/Icons/Mantenimiento.astro'
+import MaqIcon from '../components/Icons/Maq.astro'
+import GoogleIcon from '../components/Icons/Google.astro'
+import AsesorIcon from '../components/Icons/Asesor.astro'
+import PenIcon from '../components/Icons/Pen.astro'
+
+
+
+
 
 // Supports weights 100-900
 import '@fontsource-variable/montserrat';
 ---
 
 <Layout 
-title ="iWeb, desarrollando futuro."
+title ="iWeb. Desarrollando Futuro."
 description ="">
 
 	<main class="bg-bgColor1">
-		<section class="flex flex-col gap-y-3 py-72 mx-auto max-w-[740px] text-center translate-x-">
+		<!-- HOME START  -->
+		<section id="home" class="flex flex-col gap-y-3 pt-80 mx-auto max-w-[740px] text-center translate-x-">
 			<small class="text-[18px] text-cyan-200 font-bold">
 				Desarrollo Web & Software
 			</small>
@@ -19,22 +31,91 @@ description ="">
 				Desarrollamos futuro
 			</h1>
 			<span class="text-gray-400 text-[18px]">
-				Empeza tu pagina web sin problemas y con los mejores costos del mercado.
+				Empeza tu pagina web sin problemas, con la mejor presencia en Internet y de los mejores costos del mercado.
 			</span>
 			<div class="flex gap-x-24 mt-2 items-center justify-center">
 				<a
-				class="font-semibold text-xl w-max bg-cyan-200 text-black py-2 px-8 rounded-2xl"
+				class="hover:bg-cyan-100 font-semibold text-xl w-max bg-cyan-200 text-black py-2 px-8 rounded-2xl"
 				href="/planes">
 				Empecemos...</a>
 				<a
-				class="font-semibold text-xl w-max border-cyan-200 border py-2 px-8 rounded-2xl flex items-center gap-x-5"
+				class="hover:bg-bgColor3 font-semibold text-xl w-max border-cyan-200 border py-2 px-8 rounded-2xl flex items-center gap-x-5"
 				target="_blank" 
 				href="https://www.instagram.com/iweb.code/">
 				<InstagramIcon  />
 				Instagram
 				</a>
 			</div>
+			<div class="animate-bounce flex justify-center my-44">
+				<ArrowIcon />
+			</div>
 		</section>
+		<!-- HOME END  -->
+		 <!-- ABOUT US START -->
+		 <section id="nosotros" class="mx-auto">
+			<h2 class="text-5xl mx-auto text-center font-extrabold tracking-[2px]">
+				¿Qué te ofrecemos?
+			</h2>
+			<div class="my-20 flex justify-center">
+				<ul class="flex w-max justify-center items-center gap-x-10 border border-cyan-200 p-10 rounded-3xl">
+					<li class="flex gap-x-2">
+						<AsesorIcon /> 
+						Asesoramiento
+					</li>
+					<li class="flex items-center gap-x-2">
+						<MaqIcon />
+						Maquetación
+					</li>
+					<li class="flex gap-x-2">
+						<PenIcon />
+						Diseño Responsive
+					</li>
+					<li class="flex gap-x-2">
+						<GoogleIcon />
+						Buena presencia en los motores de busqueda de Google
+					</li>
+					<li class="flex gap-x-2">
+						<MantIcon /> 
+						
+						Mantenimiento mensual
+					</li>
+				</ul>
+			</div>
+			<h2 class="text-5xl mx-auto text-center font-extrabold tracking-[2px]">
+				¿Como es nuestra organización?
+			</h2>
+			<div class="flex flex-row mx-20 justify-between">
+				<div class="w-[450px] bg-cyan-200 border rounded-3xl py-7 px-10 mt-20">
+					<p class="font-extrabold text-black text-center text-nowrap mb-5 text-4xl">
+						PRIMERA REUNIÓN
+					</p>
+					<p class="font-bold text-black">
+						Reunión inicial para una organización general del proyecto y una compresión de las necesidades y objetivos del cliente. 
+					</p>
+				</div>
+				<div class="w-[450px] border border-cyan-200 rounded-3xl py-7 px-10 mt-20">
+					<p class="font-extrabold text-white text-center text-nowrap mb-5 text-4xl">
+						SEGUNDA REUNIÓN
+					</p>
+					<p class="font-bold text-white">
+						Reunión de control de proyecto, para la realización de ajustes que sean necesarios y/o revisión de progreso del mismo. 
+					</p>
+				</div>
+				<div class="w-[450px] bg-cyan-200 border rounded-3xl py-7 px-10 mt-20">
+					<p class="font-extrabold text-black text-center text-nowrap mb-5 text-4xl">
+						TERCERA REUNIÓN
+					</p>
+					<p class="font-bold text-black">
+						Ultima reunión para la presentación del proyecto y organización de ultimos detalles.
+					</p>
+				</div>
+			</div>
+		 </section>
+		 <!-- ABOUT US END -->
+		 <section class="bg-bgColor2">
+			
+		 </section>
+
 	</main>
 </Layout>
 
