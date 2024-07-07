@@ -1,5 +1,7 @@
 ---
 import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+
 import '@fontsource-variable/montserrat';
 
 
@@ -24,21 +26,19 @@ const { title,description } = Astro.props;
 	<body>
 		<Header />
 			<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
 	:root {
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-		--bgColor2: rgb(31, 32, 35)
+		--bgColor1: rgb(104, 107, 117);
+		--bgColor2: rgb(31, 32, 35);
 	}
 	body{
 		font-family: 'Montserrat Variable', sans-serif;
-		background-color: var(--bgColor2);
 		color: #fff
+	}
+	main{
+		height: 100vh;
 	}
 </style>
