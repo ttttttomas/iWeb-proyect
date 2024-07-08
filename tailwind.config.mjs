@@ -7,7 +7,6 @@ export default {
 				bgColor1: "rgb(38, 39, 43)",
 				bgColor2: "rgb(31, 32, 35)",
         		bgColor3: "rgb(48, 49, 54)",
-
 			}
 		},
 	},

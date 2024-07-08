@@ -1,0 +1,37 @@
+---
+interface Props {
+    badge?: string;
+    title: string;
+    typeShop?: string;
+    list?: Array<string>;
+}
+const { title, badge, typeShop, list } = Astro.props;
+---
+
+    <div class="text-white font-semibold flex flex-col py-5 px-10">
+        {
+            badge && (
+                <small class="font-bold w-max rounded-full bg-yellow-100 text-black text-xs py-1 px-2">
+                    {badge}
+                </small>
+                <p class="mt-8 font-extrabold text-3xl">
+                    {title}
+                </p>
+            )
+        }
+        {
+            typeShop && (
+                <p class="mt-1 text-sm text-gray-600">{typeShop}</p>
+            )
+        }
+
+        <ul class="mt-10">
+            {
+                list && (
+                    list.map(item =>(
+                        <li class="font-light">{item}</li>
+                    ))
+                )
+            }
+        </ul>
+    </div>

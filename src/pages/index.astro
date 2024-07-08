@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Box from '../components/Box.astro';
 
 import InstagramIcon from '../components/Icons/Instagram.astro'
 import ArrowIcon from '../components/Icons/Arrow.astro'
@@ -8,10 +9,6 @@ import MaqIcon from '../components/Icons/Maq.astro'
 import GoogleIcon from '../components/Icons/Google.astro'
 import AsesorIcon from '../components/Icons/Asesor.astro'
 import PenIcon from '../components/Icons/Pen.astro'
-
-
-
-
 
 // Supports weights 100-900
 import '@fontsource-variable/montserrat';
@@ -36,7 +33,7 @@ description ="">
 			<div class="flex gap-x-24 mt-2 items-center justify-center">
 				<a
 				class="hover:bg-cyan-100 font-semibold text-xl w-max bg-cyan-200 text-black py-2 px-8 rounded-2xl"
-				href="/planes">
+				href="#planes">
 				Empecemos...</a>
 				<a
 				class="hover:bg-bgColor3 font-semibold text-xl w-max border-cyan-200 border py-2 px-8 rounded-2xl flex items-center gap-x-5"
@@ -52,7 +49,7 @@ description ="">
 		</section>
 		<!-- HOME END  -->
 		 <!-- ABOUT US START -->
-		 <section id="nosotros" class="mx-auto">
+		 <section id="nosotros" class="mx-auto pb-32">
 			<h2 class="text-5xl mx-auto text-center font-extrabold tracking-[2px]">
 				¿Qué te ofrecemos?
 			</h2>
@@ -85,15 +82,15 @@ description ="">
 				¿Como es nuestra organización?
 			</h2>
 			<div class="flex flex-row mx-20 justify-between">
-				<div class="w-[450px] bg-cyan-200 border rounded-3xl py-7 px-10 mt-20">
-					<p class="font-extrabold text-black text-center text-nowrap mb-5 text-4xl">
+				<div class="shadow-lg shadow-cyan-200 w-[450px] bg-cyan-200 border-none rounded-3xl py-7 px-10 mt-20">
+					<p class="font-extrabold text-cyan-950 text-center text-nowrap mb-5 text-4xl">
 						PRIMERA REUNIÓN
 					</p>
-					<p class="font-bold text-black">
+					<p class="font-bold text-cyan-950">
 						Reunión inicial para una organización general del proyecto y una compresión de las necesidades y objetivos del cliente. 
 					</p>
 				</div>
-				<div class="w-[450px] border border-cyan-200 rounded-3xl py-7 px-10 mt-20">
+				<div class="shadow-md shadow-cyan-200 w-[450px] border border-cyan-200 rounded-3xl py-7 px-10 mt-20">
 					<p class="font-extrabold text-white text-center text-nowrap mb-5 text-4xl">
 						SEGUNDA REUNIÓN
 					</p>
@@ -101,23 +98,31 @@ description ="">
 						Reunión de control de proyecto, para la realización de ajustes que sean necesarios y/o revisión de progreso del mismo. 
 					</p>
 				</div>
-				<div class="w-[450px] bg-cyan-200 border rounded-3xl py-7 px-10 mt-20">
-					<p class="font-extrabold text-black text-center text-nowrap mb-5 text-4xl">
+				<div class="shadow-lg shadow-cyan-200 w-[450px] bg-cyan-200 rounded-3xl py-7 px-10 mt-20">
+					<p class="font-extrabold text-cyan-950 text-center text-nowrap mb-5 text-4xl">
 						TERCERA REUNIÓN
 					</p>
-					<p class="font-bold text-black">
+					<p class="font-bold text-cyan-950">
 						Ultima reunión para la presentación del proyecto y organización de ultimos detalles.
 					</p>
 				</div>
 			</div>
 		 </section>
 		 <!-- ABOUT US END -->
-		 <section class="bg-bgColor2">
-			
+		  <!-- PLANES START  -->
+		 <section id="planes" class="bg-bgColor2 py-10">
+			<h3 class="text-5xl py-10 mx-auto text-center font-extrabold tracking-[2px]">
+				Nuestros planes
+			</h3>
+			<p class="text-center">
+				Te brindamos los diferentes planes que podes llegar a elegir para tu proyecto. Personalizados especialmente pensando en vos!
+			</p>
+			<Box />
 		 </section>
-
+		 <!-- PLANES END -->
 	</main>
 </Layout>
 
 <style>
+
 </style>

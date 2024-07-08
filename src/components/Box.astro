@@ -1,15 +1,70 @@
 ---
-interface Props {
-    badge?: string
-    title: string
-    description: string
-    list?:string
-}
-const {title, description, badge, list} = Astro.props
+import BoxItem from "./BoxItem.astro";
+
+const BOX = [
+    {
+        badge: "SIMPLE",
+        title: "Pagina Simple",
+        typeShop: "(Estatica)",
+        list: [
+        "✅ Maquetación",
+        "✅ Diseño personalizado",
+        "✅ SEO (Posicionamiento en motores de busqueda)",
+        "✅ Responsive desing", 
+        "✅ Secciones de:",
+        "-Inicio",
+        "-Servicio y/o Productos",    
+        "-Contacto (Con formulario)",    
+        "✅ Hosteo", 
+        "✅ Mantenimiento"    
+    ]
+    },
+    {
+        badge: "STANDARD",
+        title: "Tienda Online",
+        typeShop: "(Estatica)",
+        list: [
+        "✅ Maquetación",
+        "✅ Diseño personalizado",
+        "✅ SEO (Posicionamiento en motores de busqueda)",
+        "✅ Responsive desing",
+        "✅ Secciones principales",
+        "✅ Administración interna del sitio", 
+        "✅ Hosteo", 
+        "✅ Mantenimiento",
+        "❌ No incluye base de datos"
+    ]
+    },
+    {
+        badge: "PREMIUM",
+        title: "Tienda Online",
+        typeShop: "(Dinámica)",
+        list: [
+        "✅ Maquetación",
+        "✅ Diseño personalizado",
+        "✅ SEO (Posicionamiento en motores de busqueda)",
+        "✅ Responsive desing",
+        "✅ Secciones principales",
+        "✅ Base de datos",
+        "✅ Registro de usuarios (Logeo y registro)",
+        "✅ Carrito de compras",
+        "✅ Medios de pago",
+        "✅ Panel administrativo",
+        "✅ Administración interna del sitio", 
+        "✅ Hosteo", 
+        "✅ Mantenimiento"
+    ]
+    }
+]
 ---
 
-<div class="flex flex-row gap-x-6">
-    <div class="">
-
-    </div>
+<div class="flex justify-between m-10">
+    {
+        BOX.map(item =>(
+            <div class="shadow-lg shadow-cyan-200 border border-cyan-200 flex rounded-3xl bg-bgColor2 justify-between h-[520px]">
+                <BoxItem {...item} />
+            </div>
+        ))
+    }
 </div>
+
