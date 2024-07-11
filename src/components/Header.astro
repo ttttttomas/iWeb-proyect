@@ -1,14 +1,14 @@
 ---
 ---
 
-<header class="bg-opacity-80 bg-bgColor2 flex fixed w-full items-center justify-around h-[70px] py-11">
+<header class="z-32 bg-opacity-80 bg-bgColor2 flex fixed w-full items-center justify-around py-1">
     <a
     class="flex items-center flex-col gap-x-3"
     href="/">
         <img
         id="logo"
         class="w-[150px]" 
-        src="/public/logo3.png" 
+        src="/public/assets/logo3.png" 
         alt="iWeb Logo">
         <span class="text-[10px] font-bold">Desarrollando futuro</span>
     </a>
@@ -34,16 +34,16 @@
     <div class="relative">
         <button
         id="button-idioms" 
-        class="p-1 rounded-full">
+        class="border border-gray-800 shadow-sm shadow-slate-500">
             <img 
             class="size-12" 
             src="/public/idioms/spanish.png" 
             alt="Spanish Logo">
         </button>
     <div 
-    class="absolute flex-col justify-around z-10 top-[52px] right-2 h-[90px] hidden"
+    class="hidden absolute flex-col justify-around z-10 top-[52px] left-1 h-[90px]"
     id="div-idioms">
-        <div class="rounded-full">
+        <div class="grayscale hover:grayscale-0 rounded-full">
             <a class="cursor-pointer">
             <img
             class="size-10" 
@@ -51,7 +51,7 @@
             alt="Spanish Logo">
             </a>
         </div>
-        <div class="rounded-full">
+        <div class="grayscale hover:grayscale-0 rounded-full">
             <a class="cursor-pointer">
             <img
             class="size-10"
@@ -66,12 +66,8 @@
         const button = document.getElementById("button-idioms")
         const divButton = document.getElementById("div-idioms")
 
-        button?.addEventListener("mouseenter",() =>{
+        button?.addEventListener("click",() =>{
             divButton?.classList.toggle("hidden")
         })
         
-        divButton?.addEventListener("mouseout", () =>{
-            divButton?.classList.toggle("hidden")
-
-        })
     </script>
