@@ -2,10 +2,11 @@ import { useState,useId } from "react";
 import './Slider.css'
 
 const images = [
-	'/public/slider/cajas1970.png',
-	'/public/slider/cajas1970-2.png',
-	'/public/slider/peliculas.png',
-	'/public/slider/tateti.png'
+	'../imgs/slider/tateti.png',
+	'../imgs/slider/cajas1970.png',
+	'../imgs/slider/cajas1970-2.png',
+	'../imgs/slider/hawaiian.png',
+	'../imgs/slider/peliculas.png'
 ];
 
 export default function Slider(){
