@@ -12,8 +12,6 @@ export default function Slider(){
     
     const [currentImage, setcurrentImage] = useState(0)
 	const quantity = images?.length;
-    const id = useId;
-    const imageId = useId;
 
 	// Return prematuro para evitar errores
 	if (!Array.isArray(images) || quantity === 0) 
@@ -37,13 +35,13 @@ export default function Slider(){
 			{
             images.map((image, index) =>{
 				return(
-					<div key={id} className={currentImage === index ? "slide active" : "slide"}>
+					<div key={index} className={currentImage === index ? "slide active" : "slide"}>
 						{
 						currentImage === index && (
 							<>
 							<img 
 							className="z-1 rounded-3xl relative h-[600px] object-cover" 
-							key={imageId} 
+							key={index} 
 							src={image} 
 							alt="Image"
 							

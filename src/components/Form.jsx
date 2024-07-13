@@ -5,7 +5,6 @@ export default function Contacto(){
     const { register, handleSubmit } = useForm();
 
     const enviar = (e,data) => {
-        e.preventDefault()
         console.log(data);
     }
 
