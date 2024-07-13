@@ -2,11 +2,11 @@ import { useState,useId } from "react";
 import './Slider.css'
 
 const images = [
-	'../imgs/slider/tateti.png',
-	'../imgs/slider/cajas1970.png',
-	'../imgs/slider/cajas1970-2.png',
-	'../imgs/slider/hawaiian.png',
-	'../imgs/slider/peliculas.png'
+	'/src/imgs/slider/tateti.png',
+	'/src/imgs/slider/cajas1970.png',
+	'/src/imgs/slider/cajas1970-2.png',
+	'/src/imgs/slider/hawaiian.png',
+	'/src/imgs/slider/peliculas.png'
 ];
 
 export default function Slider(){
@@ -31,7 +31,7 @@ export default function Slider(){
 			<button 
             className="bg-bgColor2 transform rotate-180 h-max text-black font-bold rounded-full p-2 mr-2" 
             onClick={previousImage}>
-				<img src="/public/slider/arrow.png" alt="arrow1" />
+				<img src="/src/imgs/slider/arrow.png" alt="arrow1" />
             </button>
 			{
             images.map((image, index) =>{
@@ -60,7 +60,7 @@ export default function Slider(){
 			<button 
             className="bg-bgColor2 h-max text-black font-bold rounded-full p-2 ml-2" 
             onClick={nextImage}>
-				<img src="/public/slider/arrow.png" alt="arrow2" />
+				<img src="/src/imgs/slider/arrow.png" alt="arrow2" />
 			</button>
 		</div>
 	);
