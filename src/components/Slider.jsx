@@ -42,7 +42,7 @@ export default function Slider(){
 						currentImage === index && (
 							<>
 							<img 
-							className="rounded-3xl relative h-[600px] object-cover" 
+							className="z-1 rounded-3xl relative h-[600px] object-cover" 
 							key={imageId} 
 							src={image} 
 							alt="Image"
