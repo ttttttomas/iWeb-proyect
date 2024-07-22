@@ -1,4 +1,4 @@
-import { useState,useId } from "react";
+import { useState} from "react";
 import './Slider.css'
 
 const images = [
@@ -31,7 +31,7 @@ export default function Slider(){
 			<button 
             className="bg-bgColor2 transform rotate-180 h-max text-black font-bold rounded-full p-2 mr-2" 
             onClick={previousImage}>
-				<img src="/public/imgs/slider/arrow.png" alt="arrow1" />
+				<img src="/imgs/slider/arrow.png" alt="arrow1" />
             </button>
 			{
             images.map((image, index) =>{
@@ -41,13 +41,13 @@ export default function Slider(){
 						currentImage === index && (
 							<>
 							<img 
-							className="z-1 rounded-3xl relative h-[600px] object-cover" 
+							className="z-1 rounded-3xl h-[600px] object-cover" 
 							key={index} 
 							src={image} 
 							alt="Image"
 							
 							/>
-							<div className="text-center p-2 rounded-3xl text-xl mt-10 tracking-tight bg-cyan-200 text-black font-bold h-max">
+							<div className="text-center p-2 rounded-3xl text-sm mt-10 tracking-tight bg-cyan-200 text-black font-bold h-max">
 								TIENDAS ONLINE, LANDINGS PAGES, SISTEMAS DE GESTION, VIDEOJUEGOS Y MUCHO MÁS!
 							</div>
 							</>
@@ -60,7 +60,7 @@ export default function Slider(){
 			<button 
             className="bg-bgColor2 h-max text-black font-bold rounded-full p-2 ml-2" 
             onClick={nextImage}>
-				<img src="/public/imgs/slider/arrow.png" alt="arrow2" />
+				<img src="/imgs/slider/arrow.png" alt="arrow2" />
 			</button>
 		</div>
 	);

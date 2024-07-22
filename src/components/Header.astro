@@ -1,7 +1,7 @@
 ---
 ---
 
-<header class="z-32 bg-opacity-80 bg-bgColor2 flex fixed w-full items-center justify-around py-1">
+<header class="z-32 backdrop backdrop-blur-lg bg-opacity-50 bg-bgColor2 flex fixed w-full items-center justify-around py-1">
     <a
     class="flex items-center flex-col gap-x-3"
     href="/">
@@ -34,17 +34,19 @@
     <div class="relative">
         <button
         id="button-idioms" 
-        class="border border-gray-800 shadow-sm shadow-slate-500">
+        >
             <img 
-            class="size-12" 
-            src="/imgs/idioms/spanish.png" 
+            class="size-10 rounded-full" 
+            src="/imgs/idioms/idiomas.png" 
             alt="Spanish Logo">
         </button>
     <div 
-    class="hidden absolute flex-col justify-around z-10 top-[52px] left-1 h-[90px]"
+    class="hidden absolute flex-col justify-around z-10 top-[52px] left-0 "
     id="div-idioms">
         <div class="grayscale hover:grayscale-0 rounded-full">
-            <a class="cursor-pointer">
+            <a
+            href="/" 
+            class="cursor-pointer">
             <img
             class="size-10" 
             src="/imgs/idioms/spanish.png" 
@@ -52,7 +54,9 @@
             </a>
         </div>
         <div class="grayscale hover:grayscale-0 rounded-full">
-            <a class="cursor-pointer">
+            <a
+            href="index.astro" 
+            class="cursor-pointer">
             <img
             class="size-10"
             src="/imgs/idioms/english.png" 
